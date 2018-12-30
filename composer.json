@@ -1,0 +1,42 @@
+{
+    "name": "fajuu/contactbutton",
+    "description": "Adds a contact button, which opens an email with the administrator's addressee.",
+    "type": "flarum-extension",
+    "keywords": ["fajuu", "contactbutton","flarum"],
+    "homepage": "https://github.com/fajuu/contactbutton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fajuu",
+            "email": "kontakt@fajuu.pl",
+            "homepage": "https://fajuu.pl"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/fajuu/contactbutton/issues",
+        "source": "https://github.com/fajuu/contactbutton"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.8"
+    },
+    "autoload": {
+        "psr-4": {"Fajuu\\ContactButton\\": "src/"}
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Contact Button",
+            "icon": {
+                "name": "far fa-envelope",
+                "backgroundColor": "#14191f",
+                "color": "#8e24aa"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/18228"
+        }
+    },
+    "repositories": [{
+            "type": "path",
+            "url": "packages/*"
+        }]
+}

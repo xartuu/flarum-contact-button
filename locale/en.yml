@@ -1,0 +1,9 @@
+fajuu-contactbutton:
+  admin:
+    settings:
+      title: Contact button
+      buttoname: Name of the button
+      adress: Email address or link to the website
+      icon: Button icon
+      newtab: Open the link in the new tab (email always)
+      

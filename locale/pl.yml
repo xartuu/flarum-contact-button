@@ -1,0 +1,8 @@
+fajuu-contactbutton:
+  admin:
+    settings:
+      title: Przycisk kontaktu
+      buttoname: Nazwa przycisku
+      adress: Adres email, bądź link do strony
+      icon: Ikona przycisku
+      newtab: Otwórz link w nowej karcie (email zawsze)
