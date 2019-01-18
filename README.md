@@ -28,3 +28,4 @@ As you can probably already see from the code, I am a new person in the Java Scr
 - [GitHub](https://github.com/fajuu/contactbutton)
 - [Flagrow](https://flagrow.io/extensions/fajuu/contactbutton)
 - [Flarum Discuss](https://discuss.flarum.org/d/18228-contact-button)
+- [ReadMe po Polsku](https://mykill.pl/d/1-flarum-contact-button)
