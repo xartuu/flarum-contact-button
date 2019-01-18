@@ -27,4 +27,5 @@ As you can probably already see from the code, I am a new person in the Java Scr
 - [Packagist](https://packagist.org/packages/fajuu/contactbutton)
 - [GitHub](https://github.com/fajuu/contactbutton)
 - [Flagrow](https://flagrow.io/extensions/fajuu/contactbutton)
-- [Flarum Discuss](https://mykill.pl/d/1-flarum-contact-button)
+- [Flarum Discuss](https://discuss.flarum.org/d/18228-contact-button)
+- [ReadMe po Polsku](https://mykill.pl/d/1-flarum-contact-button)
