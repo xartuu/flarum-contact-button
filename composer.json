@@ -24,7 +24,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Contact Button",
+            "title": "Fajuu - Contact Button",
             "icon": {
                 "name": "envelope-o",
                 "backgroundColor": "#14191f",
