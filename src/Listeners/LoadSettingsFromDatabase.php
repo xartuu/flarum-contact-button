@@ -34,9 +34,9 @@ class LoadSettingsFromDatabase
     if ($event->isSerializer(ForumSerializer::class))
     {
       #
-      $event->attributes['fajuu-contactbutton.buttoname'] = $this->settings->get('fajuu-contactbutton.buttoname');
+      $event->attributes['fajuu-contactbutton.label'] = $this->settings->get('fajuu-contactbutton.label');
       $event->attributes['fajuu-contactbutton.icon'] = $this->settings->get('fajuu-contactbutton.icon');
-      $event->attributes['fajuu-contactbutton.adress'] = $this->settings->get('fajuu-contactbutton.adress');
+      $event->attributes['fajuu-contactbutton.url'] = $this->settings->get('fajuu-contactbutton.url');
       $event->attributes['fajuu-contactbutton.newtab'] = $this->settings->get('fajuu-contactbutton.newtab');
       #
     }
