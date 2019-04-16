@@ -1,8 +1,9 @@
 import SettingsModal from 'flarum/components/SettingsModal';
+import Switch from 'flarum/components/Switch';
 
 export default class ContactButtonSettingsModal extends SettingsModal {
   className() {
-    return 'Modal--small';
+    return 'ContactButtonSettingsModal Modal--small';
   }
 
   title() {
@@ -11,18 +12,33 @@ export default class ContactButtonSettingsModal extends SettingsModal {
 
   form() {
     return [
-      <div className="Form-group">
-        <label>{app.translator.trans('fajuu-contactbutton.admin.settings.buttoname')}</label>
-        <input className="FormControl" type="text" placeholder: "Contact" bidi={this.setting('fajuu-contactbutton.buttoname')}></input>
-        <label style="padding-top: 20px;">{app.translator.trans('fajuu-contactbutton.admin.settings.adress')}</label>
-        <input className="FormControl" type="text" placeholder: "email@example.com / https://example.com" bidi={this.setting('fajuu-contactbutton.adress')}></input>
-        <label style="padding-top: 20px;">{app.translator.trans('fajuu-contactbutton.admin.settings.icon')}</label>
-        <input className="FormControl" type="text" placeholder: "fas fa-envelope" bidi={this.setting('fajuu-contactbutton.icon')}></input>
-        <div style="padding-top: 20px;">
-          <input type="checkbox" bidi={this.setting('fajuu-contactbutton.newtab')}></input>
-          <strong>{app.translator.trans("fajuu-contactbutton.admin.settings.newtab")}</strong>
-        </div>
-      </div>
+      m('.Form-group', [
+        m('label', app.translator.trans('fajuu-contactbutton.admin.settings.label')),
+        m('input.FormControl', {
+          bidi: this.setting('fajuu-contactbutton.label'),
+          placeholder: 'Contact',
+          type: 'text',
+        }),
+        m('label', app.translator.trans('fajuu-contactbutton.admin.settings.url')),
+        m('input.FormControl', {
+          bidi: this.setting('fajuu-contactbutton.url'),
+          placeholder: 'email@example.com / https://example.com',
+          type: 'text',
+        }),
+        m('label', app.translator.trans('fajuu-contactbutton.admin.settings.icon')),
+        m('input.FormControl', {
+          bidi: this.setting('fajuu-contactbutton.icon'),
+          placeholder: 'fas fa-envelope',
+          type: 'text',
+        }),
+      ]),
+      m('.Form-group', [
+        m('label', Switch.component({
+          state: this.setting('fajuu-contactbutton.newtab')() > 0,
+          onchange: this.setting('fajuu-contactbutton.newtab'),
+          children: app.translator.trans('fajuu-contactbutton.admin.settings.newtab'),
+        })),
+      ])
     ];
   }
 }
