@@ -27,16 +27,12 @@
             "title": "Fajuu - Contact Button",
             "icon": {
                 "name": "far fa-envelope",
-                "backgroundColor": "#14191f",
+                "backgroundColor": "#1c141f",
                 "color": "#8e24aa"
             }
         },
         "flagrow": {
             "discuss": "https://discuss.flarum.org/d/18228"
         }
-    },
-    "repositories": [{
-            "type": "path",
-            "url": "packages/*"
-        }]
+    }
 }
