@@ -1,0 +1,81 @@
+PHP:
+  beautifiers:
+    - PHP-CS-Fixer
+Less:
+  beautifiers:
+    - Prettier
+    - Pretty Diff
+  indent_size: 2
+  wrap_line_length: 0
+  end_with_comma: true
+  break_chained_methods: true
+  max_preserve_newlines: 0
+  multiline_ternary: never
+  pragma_insert: !<tag:yaml.org,2002:js/undefined> ""
+  newline_between_rules: true
+JSON:
+  beautifiers:
+    - Prettier
+    - Pretty Diff
+    - JS-Beautify
+  indent_size: 2
+  indent_style: !<tag:yaml.org,2002:js/undefined> ""
+  wrap_line_length: 0
+  end_with_comma: true
+  break_chained_methods: true
+  max_preserve_newlines: 0
+  multiline_ternary: never
+  pragma_insert: !<tag:yaml.org,2002:js/undefined> ""
+  newline_between_rules: true
+HTML:
+  beautifiers:
+    - Pretty Diff
+    - JS-Beautify
+  indent_size: 2
+  quotes: double
+  wrap_line_length: 0
+  end_with_comma: !<tag:yaml.org,2002:js/undefined> ""
+  max_preserve_newlines: 0
+  multiline_ternary: never
+  brace_style: end-expand
+  unformatted: []
+JavaScript:
+  beautifiers:
+    - Prettier
+    - Pretty Diff
+    - JS-Beautify
+    - ESLint
+  indent_size: 2
+  quotes: single
+  wrap_line_length: 0
+  break_chained_methods: true
+  end_with_comma: true
+  end_with_semicolon: true
+  max_preserve_newlines: 0
+  multiline_ternary: never
+  pragma_insert: !<tag:yaml.org,2002:js/undefined> ""
+  space_in_empty_paren: !<tag:yaml.org,2002:js/undefined> ""
+Markdown:
+  beautifiers:
+    - Prettier
+  indent_size: 2
+  quotes: !<tag:yaml.org,2002:js/undefined> ""
+  wrap_line_length: 0
+  pragma_insert: !<tag:yaml.org,2002:js/undefined> ""
+CSS:
+  beautifiers:
+    - Prettier
+    - Pretty Diff
+    - JS-Beautify
+  indent_size: 2
+  indent_style: !<tag:yaml.org,2002:js/undefined> ""
+  quotes: single
+  wrap_line_length: 0
+  end_with_comma: true
+  break_chained_methods: true
+  end_with_semicolon: true
+  max_preserve_newlines: 0
+  multiline_ternary: never
+  pragma_insert: !<tag:yaml.org,2002:js/undefined> ""
+  end_with_newline: !<tag:yaml.org,2002:js/undefined> ""
+  newline_between_rules: true
